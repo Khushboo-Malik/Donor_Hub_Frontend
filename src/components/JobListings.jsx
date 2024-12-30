@@ -11,7 +11,7 @@ const JobListings = ({isHome=true}) => {
     
     const fetchJobs= async()=>{
   try{
-    const res=await fetch('http://localhost:8000/jobs');
+    const res=await fetch('https://donor-hub-frontend.vercel.app/api/json-server');
     const data=await res.json();  
     setJobs(data);
   
