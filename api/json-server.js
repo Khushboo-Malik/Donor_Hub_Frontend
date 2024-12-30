@@ -1,10 +1,13 @@
 // api/json-server.js
 const jsonServer = require('json-server');
-const server = jsonServer.create();
-const router = jsonServer.router('src/jobs.json'); // Path to your JSON file
-const middlewares = jsonServer.defaults();
 
-server.use(middlewares);
-server.use(router);
+export default (req, res) => {
+  const server = jsonServer.create();
+  const router = jsonServer.router('src/jobs.json');  // Ensure the path is correct
+  const middlewares = jsonServer.defaults();
 
-module.exports = server;
+  server.use(middlewares);
+  server.use(router);
+
+  server(req, res);
+};
