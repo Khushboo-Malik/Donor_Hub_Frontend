@@ -22,23 +22,25 @@ const JobListing = ({donation}) => {
 
               <div className="mb-5">
                {description}
-               <button onClick={()=>setShowFullDescription((prevState)=>!prevState)} className='text-indigo-500 mb-5  hover:text-indigo-60'>
+               <button onClick={()=>setShowFullDescription((prevState)=>!prevState)} className='text-indigo-500 mb-5  hover:text-indigo-60' 
+                style={{ color: '#ea5961' }}>
                     {showFullDescription?'Less':'More'}
               </button>
               
               </div>
-              <h3 className="text-indigo-500 mb-2">{donation.goalAmount}</h3>
+              <h3 className="mb-2" style={{ color: '#e7424b' }}>{donation.goalAmount}</h3>
 
               <div className="border border-gray-100 mb-5"></div>
 
               <div className="flex flex-col lg:flex-row justify-between mb-4">
-                <div className="text-orange-700 mb-3">
+                <div className="text-black-700 mb-3">
                   <FaMapMarker className='inline text-lg mb-1 mr-1'/>
                   {donation.location}
                 </div>
                 <Link
                   to={`donate.html/${donation.id}`}
-                  className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm"
+                  className="h-[36px] hover:text-white px-4 py-2 rounded-lg text-center text-sm"
+                  style={{ backgroundColor: '#ea5961' }}
                 >
                  Read More
                 </Link>

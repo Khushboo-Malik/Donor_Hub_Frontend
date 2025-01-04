@@ -7,7 +7,7 @@ import logo from '../assets/images/logo (1).png';
 const NavBar = () => {
   return (
     <>
-    <nav className="bg-indigo-700 border-b border-indigo-500">
+    <nav className="border-b" style={{ backgroundColor: '#e7424b' }}>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div
@@ -16,7 +16,7 @@ const NavBar = () => {
             {/*<!-- Logo -->*/}
             <NavLink className="flex flex-shrink-0 items-center mr-4" to="/">
               <img
-                className="h-10 w-auto"
+                className="h-14 w-auto"
                 src={logo}
                 alt="Donor Hub"
               />

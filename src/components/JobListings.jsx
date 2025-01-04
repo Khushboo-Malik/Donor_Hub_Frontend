@@ -27,9 +27,9 @@ const JobListings = ({isHome=true}) => {
     <>
     {/*To select only first 3 jobs */}
     {/*<!-- Browse Campaigns -->*/}
-    <section className="bg-blue-50 px-4 py-10">
+    <section className="px-4 py-10" style={{ backgroundColor: '#fbe1e2' }}>
       <div className="container-xl lg:container m-auto">
-        <h2 className="text-3xl font-bold text-indigo-500 mb-6 text-center">
+        <h2 className="text-3xl font-bold mb-6 text-center" style={{ color: '#ea5961' }}>
           {isHome?'Recent Campaigns':'Browse Campaigns'}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

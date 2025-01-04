@@ -21,18 +21,29 @@ const HomeCard = () => {
               Donate Now
             </Link>
           </Card>
-          <Card bg='bg-indigo-100'>
-          <h2 className="text-2xl font-bold">For Organizers</h2>
-            <p className="mt-2 mb-4">
-            Take charge, inspire others, and unite communities for meaningful change.
-            </p>
-            <Link
-              to="/organize"
-              className="inline-block bg-indigo-500 text-white rounded-lg px-4 py-2 hover:bg-indigo-600"
-            >
-              Start a Campaign
-            </Link>
-          </Card>
+          <Card 
+  style={{ backgroundColor: '#f39da2', padding: '1rem', borderRadius: '0.5rem' }}
+>
+  <h2 className="text-2xl font-bold">For Organizers</h2>
+  <p className="mt-2 mb-4">
+    Take charge, inspire others, and unite communities for meaningful change.
+  </p>
+  <Link
+    to="/organize"
+    style={{
+      backgroundColor: '#e7424b',
+      color: 'white',
+      borderRadius: '0.5rem',
+      padding: '0.5rem 1rem',
+      display: 'inline-block',
+      textAlign: 'center',
+    }}
+    className="hover:opacity-90"
+  >
+    Start a Campaign
+  </Link>
+</Card>
+
         </div>
       </div>
     </section>
