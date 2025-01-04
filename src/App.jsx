@@ -10,7 +10,7 @@ import NotFoundPage from './pages/NotFoundPage'
 const router=createBrowserRouter(
   createRoutesFromElements(<Route path='/' element={<MainLayout/>}>
     <Route index element ={<HomePage/>}/>
-    <Route path='/jobs' element={<JobsPage/>}
+    <Route path='/donate' element={<JobsPage/>}
     />
     <Route path='*' element={<NotFoundPage/>}
     />
